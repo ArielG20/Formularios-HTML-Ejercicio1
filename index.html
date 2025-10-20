@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="CSS/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Formularios HTML Ej1</h1>
+    </header>
+    <form>
+    <fieldset>
+        <!--Datos personales-->
+        <legend>Datos personales</legend>
+        <label>Nombre completo</label>
+        <input type="text" id="usuario" name="usuario" placeholder="juanito perez" required>
+
+        <label>Correo</label>
+        <input type="email" id="correo" name="correo" placeholder="abcde@dominio.com" required>
+
+        <label>Contraseña</label>
+        <input type="password" id="clave" name="clave" required>
+
+        <div>
+        <label>Escoja su carrera</label>
+
+            <label><input type="radio" name="carrera" value="matematica" required>Matematica</label>
+            <label><input type="radio" name="carrera" value="fisica" required>Fisica</label>
+            <label><input type="radio" name="carrera" value="estadistica" required>Estadistica</label>
+            <label><input type="radio" name="carrera" value="quimica" required>Quimica</label>
+            <label><input type="radio" name="carrera" value="informatica" required>Informatica</label>
+
+        </div>
+
+            <label>Descripcion del usuario</label>
+            <textarea placeholder="Escriba un poco sobre usted" required></textarea>
+
+            <button type="reset">Limpiar</button>
+            <button type="submit">Enviar</button>
+    </fieldset>
+    </form>
+    
+</body>
+</html>
